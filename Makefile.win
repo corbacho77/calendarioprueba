@@ -1,0 +1,46 @@
+# Project: calendario
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe -D__DEBUG__
+CC       = gcc.exe -D__DEBUG__
+WINDRES  = windres.exe
+OBJ      = calendario.o turno.o calendarioAnual.o LibreriaMenus.o LibreriaValidacion.o LibreriaConsola.o personas.o
+LINKOBJ  = calendario.o turno.o calendarioAnual.o LibreriaMenus.o LibreriaValidacion.o LibreriaConsola.o personas.o
+LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc -L"C:/Program Files (x86)/MySQL/MySQL Server 5.6/lib" -L"C:/Program Files (x86)/MySQL/MySQL Server 5.6/bin" -lmysql -g3
+INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files (x86)/MySQL/MySQL Server 5.6/include" -I"C:/Program Files (x86)/MySQL/MySQL Server 5.6/include/mysql" -I"C:/Program Files (x86)/MySQL/MySQL Server 5.6/include/mysql/psi"
+CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++" -I"C:/Program Files (x86)/MySQL/MySQL Server 5.6/include" -I"C:/Program Files (x86)/MySQL/MySQL Server 5.6/include/mysql" -I"C:/Program Files (x86)/MySQL/MySQL Server 5.6/include/mysql/psi"
+BIN      = calendario.exe
+CXXFLAGS = $(CXXINCS) -g3
+CFLAGS   = $(INCS) -g3
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+calendario.o: calendario.cpp
+	$(CPP) -c calendario.cpp -o calendario.o $(CXXFLAGS)
+
+turno.o: turno.cpp
+	$(CPP) -c turno.cpp -o turno.o $(CXXFLAGS)
+
+calendarioAnual.o: calendarioAnual.cpp
+	$(CPP) -c calendarioAnual.cpp -o calendarioAnual.o $(CXXFLAGS)
+
+LibreriaMenus.o: LibreriaMenus.cpp
+	$(CPP) -c LibreriaMenus.cpp -o LibreriaMenus.o $(CXXFLAGS)
+
+LibreriaValidacion.o: LibreriaValidacion.cpp
+	$(CPP) -c LibreriaValidacion.cpp -o LibreriaValidacion.o $(CXXFLAGS)
+
+LibreriaConsola.o: LibreriaConsola.cpp
+	$(CPP) -c LibreriaConsola.cpp -o LibreriaConsola.o $(CXXFLAGS)
+
+personas.o: personas.cpp
+	$(CPP) -c personas.cpp -o personas.o $(CXXFLAGS)

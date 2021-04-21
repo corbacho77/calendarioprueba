@@ -1,0 +1,117 @@
+# depslib dependency file v1.0
+1606597268 source:c:\users\aritz\desktop\calendario\calendario.cpp
+	<iostream>
+	"LibreriaMenus.h"
+	<string>
+	<conio.h>
+	<cstdio>
+
+1606585067 c:\users\aritz\desktop\calendario\libreriamenus.h
+	"windows.h"
+	<string>
+
+1606575677 c:\users\aritz\desktop\calendario\libreriaconsola.h
+	<windows.h>
+
+1606597942 source:c:\users\aritz\desktop\calendario\calendarioanual.cpp
+	<iostream>
+	<string>
+	<stdlib.h>
+	<windows.h>
+	<conio.h>
+	"LibreriaMenus.h"
+	"LibreriaConsola.h"
+
+1606578705 source:c:\users\aritz\desktop\calendario\libreriaconsola.cpp
+	<windows.h>
+	<cstdio>
+	<stdlib.h>
+	<string>
+	<iostream>
+	"LibreriaConsola.h"
+
+1606599166 source:c:\users\aritz\desktop\calendario\libreriamenus.cpp
+	"LibreriaMenus.h"
+	"LibreriaConsola.h"
+	<iostream>
+	<windows.h>
+	<wingdi.h>
+	<string>
+
+1603706570 c:\users\aritz\desktop\calendario\libreriavalidacion.h
+
+1606472221 source:c:\users\aritz\desktop\calendario\libreriavalidacion.cpp
+	<iostream>
+	<cstdio>
+	"LibreriaConsola.h"
+	<stdlib.h>
+
+1605944200 source:c:\users\aritz\desktop\calendario\personas.cpp
+	<iostream>
+	<windows.h>
+	<mysqld_error.h>
+	<mysql.h>
+	<plugin.h>
+
+1603670586 source:c:\users\aritz\desktop\calendario\turno.cpp
+	<iostream>
+
+1342541002 c:\program files (x86)\mysql\mysql server 5.6\include\mysqld_error.h
+
+1342540506 c:\program files (x86)\mysql\mysql server 5.6\include\mysql.h
+	<standards.h>
+	<sys/types.h>
+	<winsock2.h>
+	"mysql_version.h"
+	"mysql_com.h"
+	"mysql_time.h"
+	"my_list.h"
+	"typelib.h"
+	"my_alloc.h"
+
+1342541316 c:\program files (x86)\mysql\mysql server 5.6\include\mysql_version.h
+	<custom_conf.h>
+
+1342540506 c:\program files (x86)\mysql\mysql server 5.6\include\mysql_com.h
+
+1342540506 c:\program files (x86)\mysql\mysql server 5.6\include\mysql_time.h
+
+1342540506 c:\program files (x86)\mysql\mysql server 5.6\include\my_list.h
+
+1342540506 c:\program files (x86)\mysql\mysql server 5.6\include\typelib.h
+	"my_alloc.h"
+
+1342540506 c:\program files (x86)\mysql\mysql server 5.6\include\my_alloc.h
+
+1342540506 c:\program files (x86)\mysql\mysql server 5.6\include\plugin.h
+	<mysql/services.h>
+	"plugin_ftparser.h"
+
+1342540506 c:\program files (x86)\mysql\mysql server 5.6\include\mysql\services.h
+	<mysql/service_my_snprintf.h>
+	<mysql/service_thd_alloc.h>
+	<mysql/service_thd_wait.h>
+	<mysql/service_thread_scheduler.h>
+	<mysql/service_my_plugin_log.h>
+	<mysql/service_mysql_string.h>
+
+1342540506 c:\program files (x86)\mysql\mysql server 5.6\include\mysql\service_my_snprintf.h
+	<stdarg.h>
+	<stdlib.h>
+
+1342540506 c:\program files (x86)\mysql\mysql server 5.6\include\mysql\service_thd_alloc.h
+	<stdlib.h>
+
+1342540506 c:\program files (x86)\mysql\mysql server 5.6\include\mysql\service_thd_wait.h
+
+1342540506 c:\program files (x86)\mysql\mysql server 5.6\include\mysql\service_thread_scheduler.h
+
+1342540506 c:\program files (x86)\mysql\mysql server 5.6\include\mysql\service_my_plugin_log.h
+	<stdarg.h>
+
+1342540506 c:\program files (x86)\mysql\mysql server 5.6\include\mysql\service_mysql_string.h
+	<stdlib.h>
+
+1342540506 c:\program files (x86)\mysql\mysql server 5.6\include\plugin_ftparser.h
+	"plugin.h"
+
